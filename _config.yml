@@ -1,14 +1,15 @@
 # Site settings
-title: Sampath Daily Work Blog
+title: Sampath Dev Work Blog
 email: sampath_bt@yahoo.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://sampath.github.io" # the base hostname & protocol for your site
+description: >Sampath Thennakoon
+  I am a Senior Software Engineer at Intervest Software Technologies (pvt) Ltd., a company that is at the
+  travel insurance products and tools revolution.I am also an Java Community Expert as well as an Java Certified Professional.
+  My fields of interest are Go , Java , JavaScript , NoSQL , industry automation, artificial neural networks,
+  image processing, distributed computing, artificial intelligence.
+baseurl: ""
+url: "https://sampathsl.github.io"
 twitter_username: sampath_sl
-github_username:  sampathSL
+github_username:  sampathsl
 
 # Build settings
 markdown: kramdown
