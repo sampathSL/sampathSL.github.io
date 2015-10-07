@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Sampath's Dev Work Blog">
+    <meta name="author" content="Sampath Thennakoon">
 
     <title>Sampath's Dev Work - Home</title>
 
@@ -28,6 +28,9 @@
         <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
 </head>
 
@@ -56,14 +59,14 @@
     <div class="container">
         <div class="row">
 
-            <div class="text-center">
+            <div class="text-center" style="color: #204d74">
                 <h1>~ Recent Articles ~</h1>
             </div>
 
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
                 <div class="post-preview">
-                    <a href="post.html#post3">
+                    <a href="/article3.html">
                         <h2 class="post-title">
                             Article 3 : Setting up github.io blog with JEKYLL
                         </h2>
@@ -77,7 +80,7 @@
                 <hr>
 
                 <div class="post-preview">
-                    <a href="post.html#post2">
+                    <a href="/article2.html">
                         <h2 class="post-title">
                             Article 2 : Liferay 6.2 CE Portal plugin SDK setup with Eclipse
                         </h2>
@@ -91,7 +94,7 @@
 				<hr>
 
                 <div class="post-preview">
-                    <a href="post.html#post1">
+                    <a href="/article1.html">
                         <h2 class="post-title">
                             Article 1 : How to setting up Liferay 6.2 CE Portal tomcat server
                         </h2>
@@ -107,7 +110,7 @@
 				<!-- Pager -->
                 <ul class="pager">
                     <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
+                        <a href="/posts.html">Older Posts &rarr;</a>
                     </li>
                 </ul>
             </div>
@@ -119,9 +122,6 @@
     <!-- Footer -->
     <div id="footer"></div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
 
@@ -130,10 +130,13 @@
 
     <script type="text/javascript">
         $(function(){
-
             $("#navigation").load("navigation.html");
             $("#footer").load("footer.html");
-
+            //Had to deplay 300ms until load the content
+            var delay = 300;
+            setTimeout(function(){
+                $("#btnBack").css("display","none");
+            }, delay);
         });
     </script>
 

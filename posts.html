@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sampath's Dev Work - About</title>
+    <title>Sampath's Dev Work - Blog Posts</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -30,31 +30,8 @@
     <![endif]-->
 
     <style>
-        .animate {
-            width: 200px;
-            height: 30px;
-            background-color: red;
-            position: relative;
-            -webkit-animation: myfirst 10s linear 4s infinite alternate; /* Chrome, Safari, Opera */
-            animation: myfirst 10s linear 5s infinite alternate;
-        }
-
-        /* Chrome, Safari, Opera */
-        @-webkit-keyframes myfirst {
-            0%   {background-color:red; left:0px; top:0px;}
-            25%  {background-color:yellow; left:100px; top:0px;}
-            50%  {background-color:blue; left:100px; top:100px;}
-            75%  {background-color:green; left:0px; top:100px;}
-            100% {background-color:red; left:0px; top:0px;}
-        }
-
-        /* Standard syntax */
-        @keyframes myfirst {
-            0%   {background-color:red; left:0px; top:0px;}
-            25%  {background-color:yellow; left:100px; top:0px;}
-            50%  {background-color:blue; left:100px; top:100px;}
-            75%  {background-color:green; left:0px; top:100px;}
-            100% {background-color:red; left:0px; top:0px;}
+        ul {
+            list-style-type: none;
         }
     </style>
 
@@ -64,36 +41,73 @@
 
     <!-- Navigation -->
     <div id="navigation"></div>
-
+	
+	<!-- Posts -->
+	<!--<div style="margin-bottom:25px;"></div>-->
     <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/about-bg.jpg')">
+    <!-- Page Header -->
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="page-heading">
-                        <h1>About Me</h1>
-                        <hr class="small">
-                        <span class="subheading animate">This is what I do.</span>
+                    <div class="post-heading">
+                        <h1>Sampath's Blog Posts</h1>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
     <!-- Main Content -->
     <div class="container">
         <div class="row">
+
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>I'm a Senior Software Engineer at Intervest working with a team on travel products and tools.</p>
-                <p>My favourite programming languages are Go , JavaScript and Java.</p>
-                <p>Other than software development , I spend leaning German language and
-                    Physics specially on Albert Einstein's Big Ideas. :) </p>
+
+                <div class="post-preview">
+                    <a href="article1.html">
+                        <h2 class="post-title">
+                            Article 1 : How to setting up Liferay 6.2 CE Portal tomcat server
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Liferay Portal is the leading open source portal for the enterprise, offering content management, collaboration, and social out-of-the-box.
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted on October 4, 2015</p>
+                </div>
+
+                <hr>
+
+                <div class="post-preview">
+                    <a href="posts.html#post2">
+                        <h2 class="post-title">
+                            Article 2 : Liferay 6.2 CE Portal plugin SDK setup with Eclipse
+                        </h2>
+                        <h3 class="post-subtitle">
+                            Steps to install and configure the Liferay Plugins SDK and its dependencies.
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted on October 4, 2015</p>
+                </div>
+
+                <hr>
+
+                <div class="post-preview">
+                    <a href="posts.html#post3">
+                        <h2 class="post-title">
+                            Article 3 : Setting up github.io blog with JEKYLL
+                        </h2>
+                        <h3 class="post-subtitle">
+                            For the impatient, how to setting up and get a boilerplate Jekyll site up and running.
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted on October 4, 2015</p>
+                </div>
+
+                <hr>
+
             </div>
         </div>
     </div>
-
-    <hr>
 
     <!-- Footer -->
     <div id="footer"></div>
@@ -106,17 +120,17 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/clean-blog.js"></script>
-
-    <script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-
+	
     <script type="text/javascript">
-        $(function(){
+
+		$(function(){
 
             $("#navigation").load("navigation.html");
             $("#footer").load("footer.html");
 
-        });
-    </script>
+		});
+
+    </script> 
 
 </body>
 
