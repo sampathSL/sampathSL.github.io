@@ -105,8 +105,6 @@
 					<br/>
 					<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"></div><pre class="shi_pre sh_xml snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_keyword">&lt;Connector</span> <span class="sh_type">port</span><span class="sh_symbol">=</span><span class="sh_string">"443"</span> <span class="sh_type">protocol</span><span class="sh_symbol">=</span><span class="sh_string">"HTTP/1.1"</span> <span class="sh_type">SSLEnabled</span><span class="sh_symbol">=</span><span class="sh_string">"true"</span> <span class="sh_type">maxThreads</span><span class="sh_symbol">=</span><span class="sh_string">"150"</span> <span class="sh_type">scheme</span><span class="sh_symbol">=</span><span class="sh_string">"https"</span> <span class="sh_type">secure</span><span class="sh_symbol">=</span><span class="sh_string">"true"</span> <span class="sh_type">clientAuth</span><span class="sh_symbol">=</span><span class="sh_string">"false"</span> <span class="sh_type">sslProtocol</span><span class="sh_symbol">=</span><span class="sh_string">"TLSv1"</span> <span class="sh_type">keystorePass</span><span class="sh_symbol">=</span><span class="sh_string">"any_pass"</span> <span class="sh_type">keystoreFile</span><span class="sh_symbol">=</span><span class="sh_string">"keystore_file_path"</span> <span class="sh_keyword">/&gt;</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">&lt;Connector port="443" protocol="HTTP/1.1" SSLEnabled="true" maxThreads="150" scheme="https" secure="true" clientAuth="false" sslProtocol="TLSv1" keystorePass="any_pass" keystoreFile="keystore_file_path" /&gt;</pre></div></div>
 					<br/>
-					<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"></div><pre class="shi_pre sh_xml snippet-formatted sh_sourceCode"><ul class="snippet-no-num"><li><span class="sh_keyword">&lt;Connector</span> <span class="sh_type">port</span><span class="sh_symbol">=</span><span class="sh_string">"443"</span> <span class="sh_type">protocol</span><span class="sh_symbol">=</span><span class="sh_string">"HTTP/1.1"</span> <span class="sh_type">SSLEnabled</span><span class="sh_symbol">=</span><span class="sh_string">"true"</span> <span class="sh_type">maxThreads</span><span class="sh_symbol">=</span><span class="sh_string">"150"</span> <span class="sh_type">scheme</span><span class="sh_symbol">=</span><span class="sh_string">"https"</span> <span class="sh_type">secure</span><span class="sh_symbol">=</span><span class="sh_string">"true"</span> <span class="sh_type">clientAuth</span><span class="sh_symbol">=</span><span class="sh_string">"false"</span> <span class="sh_type">sslProtocol</span><span class="sh_symbol">=</span><span class="sh_string">"TLSv1"</span> <span class="sh_type">keystorePass</span><span class="sh_symbol">=</span><span class="sh_string">"any_pass"</span> <span class="sh_type">keystoreFile</span><span class="sh_symbol">=</span><span class="sh_string">"keystore_file_path"</span> <span class="sh_keyword">/&gt;</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">&lt;Connector port="443" protocol="HTTP/1.1" SSLEnabled="true" maxThreads="150" scheme="https" secure="true" clientAuth="false" sslProtocol="TLSv1" keystorePass="any_pass" keystoreFile="keystore_file_path" /&gt;</pre></div></div>
-					<br/>
 					<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><div><pre class="shi_pre sh_xml snippet-formatted sh_sourceCode"><ul class="snippet-num"><li><span class="sh_keyword">&lt;Connector</span> <span class="sh_type">port</span><span class="sh_symbol">=</span><span class="sh_string">"8009"</span> <span class="sh_type">protocol</span><span class="sh_symbol">=</span><span class="sh_string">"AJP/1.3"</span> <span class="sh_type">redirectPort</span><span class="sh_symbol">=</span><span class="sh_string">"443"</span> <span class="sh_type">URIEncoding</span><span class="sh_symbol">=</span><span class="sh_string">"UTF-8"</span> <span class="sh_keyword">/&gt;</span></li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">&lt;Connector port="8009" protocol="AJP/1.3" redirectPort="443" URIEncoding="UTF-8" /&gt;</pre></div></div>
 						<br/>
 						Need more information about keystore file.
@@ -132,30 +130,32 @@
 						<br/>
 						Some of other changes can be add portlet-ext.properties file in Liferay HOME folder.Following are some of changes.
 						<div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"></div><pre class="shi_pre sh_xml snippet-formatted sh_sourceCode"><ul class="snippet-num"><li>#The purpose of theme.css.fast.load property is to tell whether css should be cached or not. If it is cached, it can be loaded faster.</li><li>theme.css.fast.load=false </li><li>theme.images.fast.load=false</li><li>javascript.fast.load=true</li><li>javascript.log.enabled=false</li><li>layout.template.cache.enabled=false</li><li></li><li>velocity.engine.resource.manager.cache.enabled=false</li><li>com.liferay.portal.servlet.filters.cache.CacheFilter=false</li><li>com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true</li><li></li><li>com.liferay.portal.servlet.filters.sso.cas.CASFilter=false</li><li>com.liferay.portal.servlet.filters.sso.ntlm.NtlmFilter=false</li><li>com.liferay.portal.servlet.filters.sso.ntlm.NtlmPostFilter=false</li><li></li><li>blogs.pingback.enabled=false</li><li>blogs.trackback.enabled=false</li><li>blogs.ping.google.enabled=false</li><li>message.boards.pingback.enabled=false</li><li></li><li>company.security.auth.requires.https=true</li><li>session.enable.phishing.protection=true</li><li>web.server.protocol=https</li><li>web.server.https.port=443</li></ul></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">#The purpose of theme.css.fast.load property is to tell whether css should be cached or not. If it is cached, it can be loaded faster.
-theme.css.fast.load=false
-theme.images.fast.load=false
-javascript.fast.load=true
-javascript.log.enabled=false
-layout.template.cache.enabled=false
+							theme.css.fast.load=false
+							theme.images.fast.load=false
+							javascript.fast.load=true
+							javascript.log.enabled=false
+							layout.template.cache.enabled=false
 
-velocity.engine.resource.manager.cache.enabled=false
-com.liferay.portal.servlet.filters.cache.CacheFilter=false
-com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true
+							velocity.engine.resource.manager.cache.enabled=false
+							com.liferay.portal.servlet.filters.cache.CacheFilter=false
+							com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true
 
-com.liferay.portal.servlet.filters.sso.cas.CASFilter=false
-com.liferay.portal.servlet.filters.sso.ntlm.NtlmFilter=false
-com.liferay.portal.servlet.filters.sso.ntlm.NtlmPostFilter=false
+							com.liferay.portal.servlet.filters.sso.cas.CASFilter=false
+							com.liferay.portal.servlet.filters.sso.ntlm.NtlmFilter=false
+							com.liferay.portal.servlet.filters.sso.ntlm.NtlmPostFilter=false
 
-blogs.pingback.enabled=false
-blogs.trackback.enabled=false
-blogs.ping.google.enabled=false
-message.boards.pingback.enabled=false
+							blogs.pingback.enabled=false
+							blogs.trackback.enabled=false
+							blogs.ping.google.enabled=false
+							message.boards.pingback.enabled=false
 
-company.security.auth.requires.https=true
-session.enable.phishing.protection=true
-web.server.protocol=https
-web.server.https.port=443
-</pre></div></div>
+							company.security.auth.requires.https=true
+							session.enable.phishing.protection=true
+							web.server.protocol=https
+							web.server.https.port=443
+								</pre>
+							</div>
+						</div>
 
 						Need more information about portlet-ext.properties file change?
 						<br/>
@@ -166,6 +166,7 @@ web.server.https.port=443
 						<a href="//docs.liferay.com/portal/6.1/propertiesdoc/portal.properties.html" target="_blank">https://docs.liferay.com/portal/6.1/propertiesdoc/portal.properties.html</a>
 						</p>
 
+					</div>
 				</div>
 			</div>
 		</div>
