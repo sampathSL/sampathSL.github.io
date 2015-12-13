@@ -1,5 +1,5 @@
 <!-- jQuery -->
-<script src="js/jquery.js"></script>
+<script src="../js/jquery.js"></script>
 
 <!-- Head -->
 <div id="header"></div>
@@ -7,23 +7,24 @@
 <!-- Navigation -->
 <div id="navigation"></div>
 
+<!-- Article is here -->
 <div id="article1"></div>
 
 <!-- Footer -->
 <div id="footer"></div>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.js"></script>
+<script src="../js/bootstrap.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="js/clean-blog.js"></script>
+<script src="../js/clean-blog.js"></script>
 
 <script type="text/javascript">
 	$(function(){
 		$("#header").load("post-head.html");
-		$("#navigation").load("navigation.html");
-		$("#article1").load("post1.html");
-		$("#footer").load("footer.html");
+		$("#navigation").load("../navigation.html");
+		$("#article1").load("../posts/post1.html");
+		$("#footer").load("../footer.html");
 		document.title = 'Sampath\'s Work - Article 1';
 	});
 </script>
