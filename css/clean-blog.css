@@ -397,3 +397,9 @@ body {
 .font-highlight{
   color: #0085a1;
 }
+
+code{
+  margin: 0 0 30px 0;
+  display: block;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
